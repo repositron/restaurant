@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+  postgres:
+    image: postgres:12-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: res
+      POSTGRES_USER: res
+      POSTGRES_DB: restaurant
+    ports:
+      - 5434:5432
